@@ -585,7 +585,7 @@ const childSupport = (x, y) => { // declare main function
         return topUp(yKid[150000][0], x, 150000, yKid[150000][1]); // check if income is greater than 150000 -> if so, calculate
     }
 
-    const floor = (x) => Math.floor(x/1000)*1000; // variable for finding the lower bound of a specific income imterval
+    const floor = (x) => Math.floor(x/1000)*1000; // variable for finding the lower bound of a specific income interval
     const xFloor = floor(x); // calculate floor for any given income and set it to a variable
     const base = yKid[xFloor][0]; // find the base support for any given income interval lower bound
     const margin = yKid[xFloor][1]; // find the marginal percentage for every dollar over the income interval lower bound
